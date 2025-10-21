@@ -27,7 +27,7 @@ body {
   padding: 1rem;
 }
 ```
-**Fungsi** Bungkus seluruh konten di dalam **<body>** Anda **(mulai dari <h1>Formulir... hingga </article>)** dengan sebuah**<div>** yang memiliki**class="main-container".**
+Fungsi Bungkus seluruh konten di dalam <body> Anda (mulai dari <h1>Formulir... hingga </article>) dengan sebuah<div> yang memiliki class="main-container".
 
 
  Langkah 2 Membangun Layout Utama dengan CSS Grid
