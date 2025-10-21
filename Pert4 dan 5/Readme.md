@@ -2,7 +2,7 @@
 
 ## Langkah-Langkah Menggunakan CSS Pada HTML untuk Memasukin Tampilan/Tema
 
-### Langkah 1: Fondasi & Global Styling
+Langkah 1: Fondasi & Global Styling
 
 1. Membuat file **Style.css**
 2. Masukan Kodingan Ini
@@ -27,10 +27,10 @@ body {
   padding: 1rem;
 }
 ```
-**Fungsi**   Bungkus seluruh konten di dalam **<body>** Anda **(mulai dari <h1>Formulir... hingga </article>)** dengan sebuah**<div>** yang memiliki**class="main-container".**
+**Fungsi** Bungkus seluruh konten di dalam **<body>** Anda **(mulai dari <h1>Formulir... hingga </article>)** dengan sebuah**<div>** yang memiliki**class="main-container".**
 
 
-### Langkah 2 Membangun Layout Utama dengan CSS Grid
+ Langkah 2 Membangun Layout Utama dengan CSS Grid
 BErtujuan Untuk membuat layout dua kolom di layar besar: formulir di kiri, pratinjau resep di kanan.
 
 ```bash
@@ -53,7 +53,7 @@ form, article {
 ```
 mendefinisikan**main-container** sebagai grid container. Dengan grid-**template-columns: 1fr;**, kita memulai dengan layout satu kolom yang aman untuk mobile.
 
-### Langkah 3: Menata <fieldset> dan Input di Dalamnya
+ Langkah 3: Menata <fieldset> dan Input di Dalamnya
 Bertujuan  Untuk Merapihkan agar terstruktur
 
 ```bash
@@ -88,7 +88,7 @@ form textarea {
 }
 ```
 
-### Langkah 4 Mengimplementasi Desain Responsif (Media Queries)
+ Langkah 4 Mengimplementasi Desain Responsif (Media Queries)
 
 mengubah layout menjadi dua kolom saat layar lebih besar. Tambahkan kode ini di bagian paling bawah **style.css.**
 
@@ -100,7 +100,7 @@ grid-template-columns: 1fr 1.5fr;
 }
 ```
 
-### Langkah 5 Polishing Tombol & Interaktivitas
+ Langkah 5 Polishing Tombol & Interaktivitas
 Memberikan Sentuhan Akhir yang secara profesional
 
 ```bash
@@ -137,7 +137,7 @@ article img, article video {
 
 ## Langkah Langkah Desain Fluid & Tipografi Responsif
 
-### Langkah 1 Memahami Unit Relatif (Fondasi Fluiditas)
+Langkah 1 Memahami Unit Relatif (Fondasi Fluiditas)
 
 1. **px** (Pixel): Unit absolut. **16px**akan selalu **16px**. Buruk untuk aksesibilitas dan fluiditas.
 2. **rem** (Root EM): Unit relatif terhadap ukuran font root (elemen **<html>**). Ini adalah unit terbaik untuk aksesibilitas. Jika pengguna memperbesar font di browser mereka, semua elemen yang menggunakan
@@ -167,7 +167,7 @@ body {
 
 
 
-### Langkah 2: Tipografi Fluid dengan clamp()
+Langkah 2: Tipografi Fluid dengan clamp()
 Ini adalah teknik utamanya. Fungsi clamp() "menjepit" sebuah nilai di antara batas minimum dan maksimum.
 
 Sintaks: **clamp(MINIMUM, PREFERRED, MAXIMUM);**
@@ -193,7 +193,7 @@ h1 {
 }
 ```
 
-### Langkah 3 Spasi (Spacing) yang Fluid
+Langkah 3 Spasi (Spacing) yang Fluid
 Prinsip yang sama berlaku untuk **padding**, **margin**, dan **gap**. Kita tidak ingin spasi yang kaku.
 
 Buat **gap** pada grid container kita menjadi fluid.
@@ -217,7 +217,7 @@ Buat **gap** pada grid container kita menjadi fluid.
 Jarak antar elemen (form dan pratinjau) sekarang akan ikut melebar secara proporsional dengan layar, membuat desain terasa lebih "bernapas" di layar besar tanpa boros tempat di layar kecil.
 
 
-### Langkah 4 Gambar (Images) yang Benar-Benar Responsif
+ Langkah 4 Gambar (Images) yang Benar-Benar Responsif
 Gambar seringkali merusak layout. Maka Kita harus mengaturnya.
 Pastikan gambar di dalam **<figure>** pratinjau Anda tidak hanya responsif, tapi juga memiliki rasio yang konsisten.
 
@@ -237,7 +237,9 @@ article img, article video {
 1. **max-width: 100%**; adalah properti paling penting untuk gambar responsif.
 2. **aspect-ratio: 16 / 9**; dan **object-fit**: cover; adalah kombinasi modern yang sangat kuat untuk membuat galeri atau kartu yang rapi, di mana semua gambar memiliki ukuran yang seragam tanpa peduli ukuran aslinya.
 
-### Langkah 5 Art Direction dengan **<picture>**
+ 
+Langkah 5 Art Direction dengan **<picture>**
+ 
 gambar yang bagus di desktop (lebar) terlihat buruk di mobile (terlalu kecil). Kita bisa menampilkan gambar yang berbeda (bukan hanya lebih kecil).
 Ubah **<img>** di dalam **<figure>** Anda menjadi tag **<picture>**.
 
