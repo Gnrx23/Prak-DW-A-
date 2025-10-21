@@ -7,7 +7,6 @@
 1. Membuat file **Style.css**
 2. Masukan Kodingan Ini
    ```bash
-   /* --- GLOBAL RESET & FONDASI --- */
 *, *::before, *::after {
   box-sizing: border-box;
 }
